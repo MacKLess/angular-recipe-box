@@ -12,7 +12,15 @@
         <li *ngFor="let ingredient of selectedRecipe.ingredients">{{ingredient}}
         </li>
       </ul>
-      <p>{{selectedRecipe.directions}}</p>
+    <p>{{selectedRecipe.directions}}</p>
+    <button (click)="editRecipe(selectedRecipe)">Edit!</button>
+    <button (click)="finishedReviewing()">Done</button>
+    <div *ngIf="editRecipe">
+      <label>Enter New Title:</label>
+      <input [(ngModel)]="selectedRecipe.title">
+      <br>
+      <label>Update directions:</label>
+      <input [(ngModel)]="selectedRecipe.directions">
     </div>
-  <button (click)="finishedReviewing()">Done</button>
+  </div>
 </div>

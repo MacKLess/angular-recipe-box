@@ -19,6 +19,7 @@ export class AppComponent {
 
   finishedReviewing() {
     this.selectedRecipe = null;
+    this.editRecipe = null;
   }
 
   editThisRecipe(clickedRecipe){

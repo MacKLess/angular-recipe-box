@@ -1,20 +1,21 @@
-<div class="container">
+<div class="jumbotron">
   <h1>Recipe Box</h1>
-  <!-- <h3>{{currentRecipe}}</h3> -->
+</div>
+<div class="container">
   <ul>
-    <li (click)="viewRecipe(currentRecipe)" *ngFor="let currentRecipe of recipes">
+    <li (click)="viewRecipe(currentRecipe)" *ngFor="let currentRecipe of recipes" class="outside">
       <h4>{{currentRecipe.title}}</h4>
     </li>
   </ul>
-  <div *ngIf="selectedRecipe">
+  <div id="card" *ngIf="selectedRecipe">
     <h3>{{selectedRecipe.title}}</h3>
     <ul>
       <li *ngFor="let ingredient of selectedRecipe.ingredients">{{ingredient}}
       </li>
     </ul>
     <p>{{selectedRecipe.directions}}</p>
-    <button (click)="editThisRecipe(selectedRecipe)">Edit!</button>
-    <button (click)="finishedReviewing()">Done</button>
+    <button (click)="editThisRecipe(selectedRecipe)" class="btn btn-warning">Edit!</button>
+    <button (click)="finishedReviewing()" class="btn btn-success">Done</button>
     <div *ngIf="editRecipe">
       <label>Enter New Title:</label>
       <input [(ngModel)]="selectedRecipe.title">

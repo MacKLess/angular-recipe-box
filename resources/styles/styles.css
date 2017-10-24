@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|Lato');
+
+body {
+  background-image: url("./../images/background.jpg");
+  color: #5a3c3c;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Fascinate Inline', cursive;
+  color: #fff;
+  font-size: 80px;
+}
+
+button {
+  margin: 1rem;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.outside {
+  list-style: none;
+}
+
+.container {
+  background-color: rgba(230, 224, 208, 0.85);
+  border-radius: 3rem;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #c18d23;
+  color: #dedad8;
+}
+
+.btn-success {
+  background-color: #e81c43;
+  border-color:#b31b39;
+}

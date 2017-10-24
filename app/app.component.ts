@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   recipes: Recipe[] = [
-    new Recipe('Scrambled Eggs', 'eggs, mushrooms, cheese', 'put eggs and mushroom in a pan, cook, add cheese'),
-    new Recipe('Toast', 'bread, butter, jam', 'toast bread, butter, and add jam'),
-    new Recipe('Tea', 'teabag and hot water', 'boil water and add tea bag')
+    new Recipe('Scrambled Eggs', 'eggs, mushrooms, cheese', 'Put eggs and mushroom in a pan, cook, add cheese'),
+    new Recipe('Toast', 'bread, butter, jam', 'Toast bread, butter, and add jam'),
+    new Recipe('Tea', 'teabag and hot water', 'Boil water and add tea bag')
   ];
 }
 

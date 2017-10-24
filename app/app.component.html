@@ -2,6 +2,7 @@
   <h1>Recipe Box</h1>
   <!-- <h3>{{currentRecipe}}</h3> -->
   <ul>
-    <li *ngFor="let currentRecipe of recipes">{{currentRecipe.title}}</li>
+    <li *ngFor="let currentRecipe of recipes"><h4>{{currentRecipe.title}}:</h4>  {{currentRecipe.ingredients}}<br>{{currentRecipe.directions}}</li>
+
   </ul>
 </div>

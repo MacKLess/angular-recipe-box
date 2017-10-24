@@ -11,6 +11,7 @@ export class AppComponent {
     new Recipe('Toast', ['bread', 'butter', 'jam'], 'Toast bread, butter, and add jam'),
     new Recipe('Tea', ['teabag', 'hot water'], 'Boil water and add tea bag') ];
   selectedRecipe = null;
+  editRecipe = null;
 
   viewRecipe(clickedRecipe) {
     this.selectedRecipe = clickedRecipe;
@@ -20,7 +21,7 @@ export class AppComponent {
     this.selectedRecipe = null;
   }
 
-  editRecipe(clickedRecipe){
+  editThisRecipe(clickedRecipe){
     this.editRecipe = clickedRecipe;
   }
 }

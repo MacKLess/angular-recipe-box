@@ -2,13 +2,17 @@
   <h1>Recipe Box</h1>
   <!-- <h3>{{currentRecipe}}</h3> -->
   <ul>
-    <li *ngFor="let currentRecipe of recipes">
-      <h4>{{currentRecipe.title}}:</h4>
-      <ul>
-        <li *ngFor="let ingredient of currentRecipe.ingredients">{{ingredient}}
-        </li>
-      </ul>
-      <p>{{currentRecipe.directions}}</p>
+    <li (click)="viewRecipe(currentRecipe)" *ngFor="let currentRecipe of recipes">
+      <h4>{{currentRecipe.title}}</h4>
     </li>
   </ul>
+    <div *ngIf="selectedRecipe">
+      <h3>{{selectedRecipe.title}}</h3>
+      <ul>
+        <li *ngFor="let ingredient of selectedRecipe.ingredients">{{ingredient}}
+        </li>
+      </ul>
+      <p>{{selectedRecipe.directions}}</p>
+    </div>
+  <button (click)="finishedReviewing()">Done</button>
 </div>
